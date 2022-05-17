@@ -1,0 +1,79 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html {
+    --color-primary: #FFC600;
+    --color-primary-contrast: #2c394b;
+    --color-background: #082032;
+    --color-background-secondary: #2C394B;
+    --color-text: #ffffffaa;
+    --color-link: #2196f3;
+    --color-heading: #ffffff;
+
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+        0px 1px 0.8px hsl(var(--shadow-color) / 0.21),
+        0px 1.4px 1px -2.5px hsl(var(--shadow-color) / 0.14),
+        0px 4px 3px -5px hsl(var(--shadow-color) / 0.07);
+    --shadow-elevation-medium:
+        0px 1px 0.8px hsl(var(--shadow-color) / 0.22),
+        0px 1.7px 1.3px -1.7px hsl(var(--shadow-color) / 0.16),
+        0px 6.6px 4.9px -3.3px hsl(var(--shadow-color) / 0.11),
+        0px 20px 15px -5px hsl(var(--shadow-color) / 0.05);
+    --shadow-elevation-high:
+        0px 1px 0.8px hsl(var(--shadow-color) / 0.2),
+        0px 1.3px 1px -0.7px hsl(var(--shadow-color) / 0.18),
+        0px 3.3px 2.5px -1.4px hsl(var(--shadow-color) / 0.15),
+        0px 8.8px 6.6px -2.1px hsl(var(--shadow-color) / 0.13),
+        0px 19.5px 14.6px -2.9px hsl(var(--shadow-color) / 0.1),
+        0px 37.1px 27.8px -3.6px hsl(var(--shadow-color) / 0.08),
+        0px 63.3px 47.5px -4.3px hsl(var(--shadow-color) / 0.05),
+        -0.1px 100px 75px -5px hsl(var(--shadow-color) / 0.03);
+
+    --primary: var(--color-primary);
+    --primary-contrast: var(--color-primary-contrast);
+    --mui-background: var(--color-background);
+    --mui-background-secondary: var(--color-background-secondary);
+    --mui-icon-font: 'Material Symbols Rounded';
+    --mui-color: var(--color-heading);
+    --mui-color-light: var(--color-text);
+}
+
+body
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Short Stack', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: var(--color-heading);
+}
+
+.switchbox
+{
+    position: relative;
+}
+
+.limiter
+{
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    line-height: 1.5;
+    padding: 0 1rem;
+}
